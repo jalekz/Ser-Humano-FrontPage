@@ -1,0 +1,462 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Demo Single Page | Prollux</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />		
+		<script src="js/jquery.min.js"></script>
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>		
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="bg">
+		<!-- header -->
+			<div id="home" class="header wow bounceInDown" data-wow-delay="0.4s">
+				<div class="top-header">
+					<div class="container">
+						<div class="logo">
+							<a href="#"><img src="images/logo.png" title="dreams" /></a>
+						</div>
+						<!--start-top-nav-->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Inicio</a></li>
+								<li><a href="#services" class="scroll">Servicios</a></li>
+								<li><a href="#products" class="scroll">Productos</a></li>
+								<li><a href="#us" class="scroll">Nosotros</a></li>
+								<li><a href="#contact" class="scroll">Contacto</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!-- //end header-->
+			<!-- banner -->
+			<div class="banner wow fadeIn" data-wow-delay="0.5s">
+				<div class="container">
+					<div class="banner-info text-center">
+						<h1>Título general de la página web</h1><br />
+						<span> </span>
+						<p>Breve descripción del negocio con slogan llamativo para atracción de clientes!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- //end banner -->
+			<!-- services -->
+			<div id="services" class="services">
+				<div class="container">
+					<div class="service-head text-center">
+						<h2>Servicios</h2>
+						<span> </span>
+					</div>
+					<!-- services-grids -->
+					<div class="services-grids text-center">
+						<div class="col-md-4">
+							<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
+								<span class="service-icon1"> </span>
+								<h3><a href="#">Título de Servicio</a></h3>
+								<p>Descripción general de servicio particular que se ofrece, mostrando utilidad y beneficios para el cliente.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
+								<span class="service-icon2"> </span>
+								<h3><a href="#">Título de Servicio</a></h3>
+								<p>Descripción general de servicio particular que se ofrece, mostrando utilidad y beneficios para el cliente.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
+								<span class="service-icon3"> </span>
+								<h3><a href="#">Título de Servicio</a></h3>
+								<p>Descripción general de servicio particular que se ofrece, mostrando utilidad y beneficios para el cliente.</p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!-- //end services-grids -->
+				</div>
+			</div>
+			<!-- services -->
+			<div class="clearfix"> </div>
+			<!-- benefits -->
+			<div id="port" class="expertise">
+				<div class="expertice-grids">
+					<div class="col-md-8 expertice-left-grid wow fadeInLeft" data-wow-delay="0.4s">
+						<div class="expertise-head">
+							<h3>Conoce más</h3>
+							<p>Descripción más detallada de los servicios que se ofrecen señalando ampliamente los beneficios con los que el cliente puede contar al solicitarlos.</p>
+						</div>
+						<div class="expertise-left-inner-grids">
+							<div class="e-left-inner-grid">
+								<div class="e-left-inner-grid-left">
+									<span class="e-icon1"> </span>
+								</div>
+								<div class="e-left-inner-grid-right">
+									<h4>Título de Beneficio</h4>
+									<p>Descripción amplia sobre el beneficio señalado detallando la manera de obtenerlo y la eficacia del mismo.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="e-left-inner-grid">
+								<div class="e-left-inner-grid-left">
+									<span class="e-icon2"> </span>
+								</div>
+								<div class="e-left-inner-grid-right">
+									<h4>Título de Beneficio</h4>
+									<p>Descripción amplia sobre el beneficio señalado detallando la manera de obtenerlo y la eficacia del mismo.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="e-left-inner-grid">
+								<div class="e-left-inner-grid-left">
+									<span class="e-icon3"> </span>
+								</div>
+								<div class="e-left-inner-grid-right">
+									<h4>Título de Beneficio</h4>
+									<p>Descripción amplia sobre el beneficio señalado detallando la manera de obtenerlo y la eficacia del mismo.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="e-left-inner-grid">
+								<div class="e-left-inner-grid-left">
+									<span class="e-icon4"> </span>
+								</div>
+								<div class="e-left-inner-grid-right">
+									<h4>Título de Beneficio</h4>
+									<p>Descripción amplia sobre el beneficio señalado detallando la manera de obtenerlo y la eficacia del mismo.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<a class="leran-more" href="#">Contáctanos</a>
+					</div>
+					<div class="col-md-4 expertice-right-grid wow fadeInRight" data-wow-delay="0.4s">
+						
+					</div>
+					<div class="clearfix"> </div> 
+				</div>
+			</div>
+			<!-- //end benefits -->
+			<!-- products -->
+			<div class="portfolio" id="products">
+				<div class="portfolio-top">
+					<div class="col-md-8">
+						<div class="portfolio-top-left wow fadeInLeft" data-wow-delay="0.4s">
+							<h3>Productos</h3>
+							<p>Amplia descripción de los productos que se ofrecen resaltando características esenciales de los mismos y el propósito por el cual fueron elaborados.</p>
+							<p>Amplia descripción de los productos que se ofrecen resaltando características esenciales de los mismos y el propósito por el cual fueron elaborados.</p>
+							<div class="portfolio-top-left-grids">
+								<div class="portfolio-top-left-grid">
+									<div class="portfolio-top-left-grid-left">
+										<span class="p-icon1"> </span>
+									</div>
+									<div class="portfolio-top-left-grid-right">
+										<h5>Título de producto</h5>
+										<p>Descripción y/o detalles del producto señalando características importantes y/o beneficios del mismo.</p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="portfolio-top-left-grid">
+									<div class="portfolio-top-left-grid-left">
+										<span class="p-icon2"> </span>
+									</div>
+									<div class="portfolio-top-left-grid-right">
+										<h5>Título de producto</h5>
+										<p>Descripción y/o detalles del producto señalando características importantes y/o beneficios del mismo.</p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="portfolio-top-left-grid">
+									<div class="portfolio-top-left-grid-left">
+										<span class="p-icon3"> </span>
+									</div>
+									<div class="portfolio-top-left-grid-right">
+										<h5>Título de producto</h5>
+										<p>Descripción y/o detalles del producto señalando características importantes y/o beneficios del mismo.</p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 portfolio-top-right-inner wow fadeInRight" data-wow-delay="0.4s">
+						<div class="portfolio-top-right">
+							
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+					<!-- product list -->
+					<div class="portfolio-works">
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p1.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>Titulo de Producto</h4>
+								<p>Descripción y/o detalles del producto señalando características importantes y/o beneficios del mismo utilizando como apoyo el gráfico presentado</p>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p2.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>Titulo de Producto</h4>
+								<p>Descripción y/o detalles del producto señalando características importantes y/o beneficios del mismo utilizando como apoyo el gráfico presentado</p>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p3.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>Titulo de Producto</h4>
+								<p>Descripción y/o detalles del producto señalando características importantes y/o beneficios del mismo utilizando como apoyo el gráfico presentado</p>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p6.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>Titulo de Producto</h4>
+								<p>Descripción y/o detalles del producto señalando características importantes y/o beneficios del mismo utilizando como apoyo el gráfico presentado</p>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p4.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>Titulo de Producto</h4>
+								<p>Descripción y/o detalles del producto señalando características importantes y/o beneficios del mismo utilizando como apoyo el gráfico presentado</p>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="portfolio-work-grid-pic">
+								<img src="images/p5.jpg" title="name" />
+							</div>
+							<div class="portfolio-work-grid-caption">
+								<h4>Titulo de Producto</h4>
+								<p>Descripción y/o detalles del producto señalando características importantes y/o beneficios del mismo utilizando como apoyo el gráfico presentado</p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!-- //end product list -->
+				</div>
+			</div>
+			<!-- //end products -->
+			<!-- team -->
+			<div id="team" class="team-members">
+					<div class="wrap"> 
+						<div class="tm-head">
+							<h3>Productos Adicionales</h3>
+							<p>Talba adicional de productos o servicios.</p>
+						</div>
+						<div class="tm-head-grids">
+							<div class="tm-head-grid wow fadeInLeft" data-wow-delay="0.4s">
+								<img src="images/team-member2.jpg" alt="">
+								<h4>Título de Producto</h4>
+								<h5>Descripción y/o detalles del producto señalando características importantes y/o beneficios del mismo utilizando como apoyo el gráfico presentado</h5>
+							</div>
+							<div class="tm-head-grid wow fadeInUp" data-wow-delay="0.4s">
+								<img src="images/team-member1.jpg" alt="">
+								<h4>Título de Producto</h4>
+								<h5>Descripción y/o detalles del producto señalando características importantes y/o beneficios del mismo utilizando como apoyo el gráfico presentado</h5>
+							</div>
+							<div class="tm-head-grid wow fadeInRight" data-wow-delay="0.4s">
+								<img src="images/team-member3.jpg" alt="">
+								<h4>Título de Producto</h4>
+								<h5>Descripción y/o detalles del producto señalando características importantes y/o beneficios del mismo utilizando como apoyo el gráfico presentado</h5>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+			<!-- team -->
+			<!-- about -->			
+			<div class="about" id="us">
+				<div class="wrap"> 
+					<div class="about-head">
+						<h1></h1>						
+					</div>
+					<!--about details-->					
+					<div class="col-md-4 expertice-right-grid wow fadeInLeft" data-wow-delay="0.4s">
+						
+					</div>
+					<div class="expertise">
+						<div class="expertice-grids">
+							<div class="col-md-8 expertice-left-grid wow fadeInRight" data-wow-delay="0.4s">
+								<div class="expertise-head">
+									<h3>Nosotros</h3>
+									<p>Descripción detallada de empresa, misión, visión y valores. Breve historia general de la empresa así como casos de éxito con proyectos o productos realizados en base a requerimientos o solicitudes de clientes.</p>
+								</div>
+								<div class="expertise-left-inner-grids">
+									<div class="e-left-inner-grid">
+										<div class="e-left-inner-grid-left">
+											<span class="e-icon1"> </span>
+										</div>
+										<div class="e-left-inner-grid-right">
+											<h4>Caso de éxito</h4>
+											<p>Descripción de algún caso de éxito de algún servicio o producto que la empresa o negocio ofrece.</p>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="e-left-inner-grid">
+										<div class="e-left-inner-grid-left">
+											<span class="e-icon2"> </span>
+										</div>
+										<div class="e-left-inner-grid-right">
+											<h4>Caso de éxito</h4>
+											<p>Descripción de algún caso de éxito de algún servicio o producto que la empresa o negocio ofrece.</p>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="e-left-inner-grid">
+										<div class="e-left-inner-grid-left">
+											<span class="e-icon3"> </span>
+										</div>
+										<div class="e-left-inner-grid-right">
+											<h4>Caso de éxito</h4>
+											<p>Descripción de algún caso de éxito de algún servicio o producto que la empresa o negocio ofrece.</p>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="e-left-inner-grid">
+										<div class="e-left-inner-grid-left">
+											<span class="e-icon4"> </span>
+										</div>
+										<div class="e-left-inner-grid-right">
+											<h4>Caso de éxito</h4>
+											<p>Descripción de algún caso de éxito de algún servicio o producto que la empresa o negocio ofrece.</p>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+							<div class="clearfix"> </div> 
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<!--//end about details-->
+			<!-- //end about -->
+			</div>
+			<!-- map -->
+			<div class="map">
+				<div class="container">
+					<div class="service-head text-center">
+						<h2>Encuéntranos</h2>
+					</div>				
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17105.073837723387!2d-100.32512471946517!3d25.674648615836286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be2b4088a38f%3A0x5f5d2e5119dcc9b!2sMuseo+de+Historia+Mexicana!5e0!3m2!1ses-419!2smx!4v1507847324618" allowfullscreen style="margin-top: 15px;"></iframe>
+				</div>
+			</div>
+			<!-- //end map -->
+			<!-- contact -->
+			<div id="contact" class="contact">
+				<div class="container">
+				<div class="contact-grids">
+					<div class="col-md-6">
+						<div class="contact-left wow fadeInRight" data-wow-delay="0.4s">
+							<h3>Contáctanos</h3>
+							<label>Si tienes alguna pregunta o comentario no dudes en enviarnos un mensaje y nos comunicaremos contigo.</label>
+							<div class="contact-left-grids">
+								<div class="col-md-6">
+									<div class="contact-left-grid">
+										<p><span class="c-mobi"> </span>(81) 1234-5678</p>
+										<p><span class="c-twitter"> </span><a href="#">@dreams</a></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="contact-right-grid">
+										<p><span class="c-msg"> </span><a href="mailto:contacto@dominio.com">mail@mail.com</a></p>
+										<p><span class="c-face"> </span><a href="#">facebook.com</a></p>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="contact-right wow fadeInLeft" data-wow-delay="0.4s">
+							<form>
+								<input type="text" class="text" value="Nombre">
+					 			<input type="text" class="text" value="Email" >
+					 	 		<textarea value="Mensaje">Mensaje</textarea>
+								<input class="wow shake" data-wow-delay="0.3s" type="submit" value="Enviar" />
+							</form>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<!-- copy-right -->
+				<div class="copy-right text-center">
+					<p><a href="http://prollux.com/">Prollux 2017</a></p>
+					<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+				<!-- copy-right -->
+			</div>
+			</div>
+			<!-- contact -->
+		</div>
+	</body>
+</html>
+
