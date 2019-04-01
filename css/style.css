@@ -17,7 +17,7 @@ body a{
 }
 /*-----start-header----*/
 .bg{
-	background:url(../images/baner.jpg) no-repeat 0px 0px;
+	background:url(../images/baner-min.jpg) no-repeat 0px 0px;
 	background-size:cover;
 }
 .header{
@@ -25,6 +25,7 @@ body a{
 .logo{
 	float: left;
 	margin-top: 0.6em;
+	background: rgba(255,255,255,0.18);
 }
 .logo a{
 	color: #303030;
@@ -37,6 +38,10 @@ body a{
 }
 .logo320{
 	display:none;
+}
+.logo img {
+	width: 225px;
+	height: auto;
 }
 /*----navbar-nav----*/
 .top-header{
@@ -54,7 +59,7 @@ body a{
 }
 .top-nav ul li.active a,
 .top-nav ul li a:hover{
-	color:#ff9800;
+	color:#003b6a;
 }
 .logo a{
 	display:block;
@@ -196,7 +201,7 @@ nav a#pull {
 .banner-info span{
 	width:15%;
 	height:1px;
-	background:#ff9800;
+	background:#96c3c0;
 	display:inline-block;
 }
 .banner-info p{
@@ -221,7 +226,7 @@ nav a#pull {
 .service-head span{
 	width:15%;
 	height:1px;
-	background:#ff9800;
+	background:#003b6a;
 	display:inline-block;
 }
 .service-grid span{
@@ -328,7 +333,7 @@ nav a#pull {
 }
 a.leran-more{
 	background:#FFFFFF;
-	color:#222222;
+	color:#003b6a;
 	font-weight:500;
 	text-transform:uppercase;
 	text-decoration:none;
@@ -341,10 +346,10 @@ a.leran-more{
 	-moz-border-radius: 3em;
 	-ms-border-radius: 3em;
 	-o-border-radius: 3em;
-	border:1px solid #ff9800;
+	border:1px solid #003b6a;
 }
 a.leran-more:hover{
-	background:#222222;
+	background:#003b6a;
 	color:#FFFFFF;
 }
 .expertice-left-grid{
@@ -821,7 +826,7 @@ a.leran-more:hover{
 	min-height:150px;
 }
 .contact-right input[type="submit"]{
-	background:#ff9800;
+	background:#003b6a;
 	padding:0.9em 1.5em;
 	color:#FFF;
 	text-transform:uppercase;
@@ -836,7 +841,7 @@ a.leran-more:hover{
 }
 .contact-right input[type="submit"]:hover{
 	background:#ffffff;
-	color: #ff9800;
+	color: #003b6a;
 }
 /*---- copy-right -----*/
 .copy-right p{
@@ -849,7 +854,7 @@ a.leran-more:hover{
 	margin-top:5em;
 }
 .copy-right p a{
-	color:#ff9800;
+	color:#96c3c0;
 }
 .copy-right p a:hover{
 	color:#FFF;
@@ -894,7 +899,7 @@ a.leran-more:hover{
 }
 @media (max-width:1024px){
 	.container{
-		width:80%;
+		width:95%;
 	}
 	.portfolio-work-grid-caption {
 		padding: 2.4em 1em 0em 1em;
